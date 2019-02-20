@@ -1,0 +1,19 @@
+User Name :  <input type="text" [(ngModel)] ="userName">
+<button (click)="search()">Search </button>
+<div *ngIf = "response">
+<p> Login Name : {{response.login}} </p>
+<p> Id : {{response.id}} </p>
+<p>  Node Id: {{response.node_id}} </p>
+<p> Avatar Url : {{response.avatar_url}} </p>
+</div>
+
+<!-- to avoid response being undefined and associated errors
+
+  <p> Login Name : {{response?.login}} </p> 
+  <p> Id : {{response?.id}} </p>
+  <p>  Node Id: {{response?.node_id}} </p>
+  <p> Avatar Url : {{response?.avatar_url}} </p>
+
+  -->
+  
+
